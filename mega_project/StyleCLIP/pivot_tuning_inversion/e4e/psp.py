@@ -1,9 +1,9 @@
 import matplotlib
-from configs import PATH_CONFIGS
+from StyleCLIP.configs import PATH_CONFIGS
 matplotlib.use('Agg')
 import torch
 from torch import nn
-from pivot_tuning_inversion.e4e.encoders import psp_encoders
+from StyleCLIP.pivot_tuning_inversion.e4e.encoders import psp_encoders
 
 path_configs = PATH_CONFIGS()
 

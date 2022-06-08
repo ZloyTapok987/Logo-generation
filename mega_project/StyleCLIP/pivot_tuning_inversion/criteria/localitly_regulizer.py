@@ -1,8 +1,8 @@
 import torch
 import numpy as np
 
-from configs import PTI_HPARAMS
-from pivot_tuning_inversion.criteria import l2_loss
+from StyleCLIP.configs import PTI_HPARAMS
+from StyleCLIP.pivot_tuning_inversion.criteria import l2_loss
 
 pti_hparams = PTI_HPARAMS()
 

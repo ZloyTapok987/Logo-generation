@@ -5,8 +5,8 @@ import torch
 from torch import nn
 from torch.nn import Conv2d, BatchNorm2d, PReLU, Sequential, Module
 
-from pivot_tuning_inversion.e4e.encoders.helpers import get_blocks, bottleneck_IR, bottleneck_IR_SE, _upsample_add
-from pivot_tuning_inversion.e4e.stylegan2.model import EqualLinear
+from StyleCLIP.pivot_tuning_inversion.e4e.encoders.helpers import get_blocks, bottleneck_IR, bottleneck_IR_SE, _upsample_add
+from StyleCLIP.pivot_tuning_inversion.e4e.stylegan2.model import EqualLinear
 
 
 class ProgressiveStage(Enum):
