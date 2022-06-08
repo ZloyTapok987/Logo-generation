@@ -7,8 +7,7 @@ import PIL.Image
 import torch
 from torchvision.transforms import transforms
 import pickle
-import StyleCLIP.dnnlib
-import legacy
+import StyleCLIP.dnnlib as dnnlib
 from configs import GENERATOR_CONFIGS
 from dlib_utils.face_alignment import image_align
 from dlib_utils.landmarks_detector import LandmarksDetector
