@@ -11,7 +11,7 @@ import torch
 import clip
 from StyleCLIP.wrapper import (FaceLandmarksDetector, Generator,
                      VGGFeatExtractor, e4eEncoder, PivotTuning)
-from projector import project 
+from StyleCLIP.projector import project
 
 class Manipulator():
     """Manipulator for style editing
