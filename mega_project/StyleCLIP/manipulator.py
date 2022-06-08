@@ -9,7 +9,7 @@ import PIL.Image
 import torch
 
 import clip
-from wrapper import (FaceLandmarksDetector, Generator, 
+from StyleCLIP.wrapper import (FaceLandmarksDetector, Generator,
                      VGGFeatExtractor, e4eEncoder, PivotTuning)
 from projector import project 
 
