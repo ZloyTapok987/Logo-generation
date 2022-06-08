@@ -12,8 +12,8 @@ from StyleCLIP.configs import GENERATOR_CONFIGS
 from StyleCLIP.dlib_utils.face_alignment import image_align
 from StyleCLIP.dlib_utils.landmarks_detector import LandmarksDetector
 
-from pivot_tuning_inversion.utils.ImagesDataset import ImagesDataset, ImageLatentsDataset
-from pivot_tuning_inversion.training.coaches.multi_id_coach import MultiIDCoach
+from StyleCLIP.pivot_tuning_inversion.utils.ImagesDataset import ImagesDataset, ImageLatentsDataset
+from StyleCLIP.pivot_tuning_inversion.training.coaches.multi_id_coach import MultiIDCoach
 
 
 class FaceLandmarksDetector:
