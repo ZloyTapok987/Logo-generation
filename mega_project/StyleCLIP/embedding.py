@@ -23,7 +23,7 @@ def zeroshot_classifier(classnames, templates, model):
 def get_delta_t(
         classnames, 
         model, 
-        prompts=np.load('pretrained/imagenet_templates.npy').tolist()
+        prompts=np.load('StyleCLIP/pretrained/imagenet_templates.npy').tolist()
     ):
     text_features = zeroshot_classifier(classnames, prompts, model).t()
 
