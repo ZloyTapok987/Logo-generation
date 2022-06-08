@@ -12,7 +12,7 @@ import re
 import copy
 import numpy as np
 import torch
-import StyleCLIP.dnnlib
+import StyleCLIP.dnnlib as dnnlib
 from StyleCLIP.torch_utils import misc
 
 #----------------------------------------------------------------------------
