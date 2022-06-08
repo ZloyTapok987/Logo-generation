@@ -8,10 +8,9 @@ import torch
 from torchvision.transforms import transforms
 import pickle
 import StyleCLIP.dnnlib as dnnlib
-from configs import GENERATOR_CONFIGS
-from dlib_utils.face_alignment import image_align
-from dlib_utils.landmarks_detector import LandmarksDetector
-from torch_utils.misc import copy_params_and_buffers
+from StyleCLIP.configs import GENERATOR_CONFIGS
+from StyleCLIP.dlib_utils.face_alignment import image_align
+from StyleCLIP.dlib_utils.landmarks_detector import LandmarksDetector
 
 from pivot_tuning_inversion.utils.ImagesDataset import ImagesDataset, ImageLatentsDataset
 from pivot_tuning_inversion.training.coaches.multi_id_coach import MultiIDCoach
