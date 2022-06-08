@@ -13,7 +13,7 @@ import copy
 import numpy as np
 import torch
 import StyleCLIP.dnnlib
-from torch_utils import misc
+from StyleCLIP.torch_utils import misc
 
 #----------------------------------------------------------------------------
 
