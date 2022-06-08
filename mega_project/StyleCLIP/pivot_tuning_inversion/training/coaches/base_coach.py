@@ -7,11 +7,11 @@ import torch
 from torchvision import transforms
 from lpips import LPIPS
 
-from configs import PTI_HPARAMS, PATH_CONFIGS
-from pivot_tuning_inversion.criteria.localitly_regulizer import Space_Regulizer
-from pivot_tuning_inversion.criteria import l2_loss
-from pivot_tuning_inversion.e4e.psp import pSp
-from pivot_tuning_inversion.utils.models_utils import toogle_grad
+from StyleCLIP.configs import PTI_HPARAMS, PATH_CONFIGS
+from StyleCLIP.pivot_tuning_inversion.criteria.localitly_regulizer import Space_Regulizer
+from StyleCLIP.pivot_tuning_inversion.criteria import l2_loss
+from StyleCLIP.pivot_tuning_inversion.e4e.psp import pSp
+from StyleCLIP.pivot_tuning_inversion.utils.models_utils import toogle_grad
 
 
 pti_hparams = PTI_HPARAMS()
