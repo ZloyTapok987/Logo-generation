@@ -3,7 +3,7 @@ import os
 from torch.utils.data import Dataset
 from PIL import Image
 
-from pivot_tuning_inversion.utils.data_utils import make_dataset
+from StyleCLIP.pivot_tuning_inversion.utils.data_utils import make_dataset
 
 
 class ImageLatentsDataset(Dataset):
