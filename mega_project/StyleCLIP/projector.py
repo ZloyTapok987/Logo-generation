@@ -19,8 +19,8 @@ import PIL.Image
 import torch
 import torch.nn.functional as F
 
-import StyleCLIP.dnnlib
-import StyleCLIP.legacy
+import StyleCLIP.dnnlib as dnnlib
+import StyleCLIP.legacy as legacy
 
 def project(
     G,

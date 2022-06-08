@@ -1,6 +1,6 @@
 import torch
-from manipulator import Manipulator
-from wrapper import Generator
+from StyleCLIP.manipulator import Manipulator
+from StyleCLIP.wrapper import Generator
 
 
 if __name__ == '__main__':

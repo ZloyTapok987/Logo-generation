@@ -4,9 +4,9 @@ import clip
 import numpy as np
 import torch
 
-from embedding import get_delta_t
-from manipulator import Manipulator
-from wrapper import Generator
+from StyleCLIP.embedding import get_delta_t
+from StyleCLIP.manipulator import Manipulator
+from StyleCLIP.wrapper import Generator
 
 
 def get_delta_s(global_style_direction, delta_t, manipulator, beta_threshold):
