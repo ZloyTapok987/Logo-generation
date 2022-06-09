@@ -4,7 +4,7 @@ import torch
 
 
 def zeroshot_classifier(classnames, templates, model):
-    device = model.token_embedding.weight.device
+    device = torch.device('cuda:0')
     with torch.no_grad():
         zeroshot_weights = []
         for classname in classnames:
