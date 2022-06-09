@@ -2,7 +2,6 @@ import os
 
 import torch
 from torch import nn
-from eval import sample_all_glyphs
 from random import randrange
 
 GAN_EMBED_DIR = "gan_latent_spaces"
