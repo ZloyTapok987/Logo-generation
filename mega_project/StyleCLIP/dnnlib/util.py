@@ -245,7 +245,7 @@ def get_module_from_obj_name(obj_name: str) -> Tuple[types.ModuleType, str]:
         try:
             importlib.import_module('StyleCLIP.' + module_name) # may raise ImportError
         except ImportError:
-            if not str(sys.exc_info()[1]).startswith("No module named '" + module_name + "'"):
+            if not str(sys.exc_info()[1]).startswith("No module named '" + 'StyleCLIP.' + module_name + "'"):
                 raise
 
     # maybe the requested attribute is missing?
