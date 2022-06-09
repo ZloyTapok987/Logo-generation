@@ -234,7 +234,7 @@ def get_module_from_obj_name(obj_name: str) -> Tuple[types.ModuleType, str]:
     # try each alternative in turn
     for module_name, local_obj_name in name_pairs:
         try:
-            module = importlib.import_module(module_name) # may raise ImportError
+            module = importlib.import_module('StyleCLIP.' + module_name) # may raise ImportError
             get_obj_from_module(module, local_obj_name) # may raise AttributeError
             return module, local_obj_name
         except:
