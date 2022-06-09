@@ -243,7 +243,7 @@ def get_module_from_obj_name(obj_name: str) -> Tuple[types.ModuleType, str]:
     # maybe some of the modules themselves contain errors?
     for module_name, _local_obj_name in name_pairs:
         try:
-            importlib.import_module(module_name) # may raise ImportError
+            importlib.import_module('StyleCLIP.' + module_name) # may raise ImportError
         except ImportError:
             if not str(sys.exc_info()[1]).startswith("No module named '" + module_name + "'"):
                 raise
