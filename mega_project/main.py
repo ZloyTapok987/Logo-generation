@@ -29,12 +29,12 @@ NUM_LOGOS = 15192
 def prepare():
     device = torch.device('cuda:0')
     # pretrained ffhq generator
-    ckpt = '/content/drive/MyDrive/diploma/out.pkl'  # 'checkpoint/out.pkl'
+    ckpt = 'checkpoint/out.pkl'
     G = Generator(ckpt, device)
     # CLIP
     clipModel, preprocess = clip.load("ViT-B/32", device=device)
     # global image direction
-    fs3 = np.load('/content/drive/MyDrive/diploma/StyleCLIP/tensor/fs3logo.npy')  # 'StyleCLIP/tensor/fs3logo.npy')
+    fs3 = np.load('checkpoint/fs3logo.npy')  # 'StyleCLIP/tensor/fs3logo.npy')
     manipulator = Manipulator(G, device, face_preprocess=False, dataset_name="logo", num_images=1999)
 
     i2v = ImageToVec()
